@@ -1,0 +1,42 @@
+
+<div style="margin-top: 40px;">
+    <h1>Your Feeds</h1>
+        <div class="row">
+            <div *ngFor="let post of postList" class="col-4" style="padding: 10px 20px;" >
+                <div class="postcard">
+                    <div style="margin-top: 10px; font-weight: bold; color: black;">Title</div>
+                    <div>{{post.title}}</div>
+                    <div style="margin-top: 15px; font-weight: bold; color: black;">Body</div>
+                    <div>{{post.body}}</div>
+                    <button (click) = "postclicked(post.id)" data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin-top: 10px;">View Comments</button>
+                </div>
+    
+            </div>
+        </div>
+
+</div>
+
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">COMMENTS</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div *ngFor="let comment of comments" style="padding: 5px;" >
+                <div class="commentcard">
+                    <div style="font-weight: bold;">{{comment.email}}</div>
+                    <div>{{comment.body}}</div>
+                </div>
+    
+            </div>
+          
+        </div>
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+  </div>

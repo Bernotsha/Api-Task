@@ -1,0 +1,54 @@
+.homesection{
+    background-color: white;
+    margin: 30px;
+    border-radius: 20px;
+}
+
+.homecontent{
+    padding: 30px;
+}
+
+.posterflex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+
+}
+
+.navigation> ul{
+    position: relative;
+}
+
+.navigation > ul >li{
+    display: inline-block;
+    padding: 0px 30px;
+}
+
+.navigation > ul > li> a{
+    text-decoration: none;
+}
+
+label{
+    display: inline-block;
+    width: 250px;
+}
+
+.profilesection{
+    margin-top: 30px;
+    width: 400px;
+    background-color: #111B5826;
+    border: 3px solid #111B58;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.profilefield{
+    margin: 15px 0px;
+}

@@ -1,0 +1,90 @@
+<section class="homesection">
+    <div class="homecontent">
+        <div class="posterflex">
+            <div class="logo">Opentext Poster Application</div>
+            <div class="navigation">
+                <ul>
+                    <li>      
+                        <a class="nav-link" routerLink="/home">Home</a>
+                    </li>
+                    <li>      
+                        <a class="nav-link" routerLink="/posts">Feeds</a>
+                    </li>
+                    <li>      
+                        <a class="nav-link" routerLink="/posts">All feeds</a>
+                    </li>
+                    <li>      
+                        <a class="nav-link" routerLink="/posts">About</a>
+                    </li>
+                    <li>      
+                        <a class="nav-link" routerLink="/posts">Help</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        
+        <div class="profilesection">
+            <div style="margin-top: 10px; font-size: 20px; margin-bottom: 20px;">My profile</div>
+            <div class="profilefield">
+                <label>Id</label>
+                <span>{{userList[0].id}}</span>
+            </div>
+            <div class="profilefield">
+                <label>Name</label>
+                <span>{{userList[0].username}}</span>
+            </div>
+            
+            <div class="profilefield">
+                <label>User Name</label>
+                <span>{{userList[0].username}}</span>
+            </div>
+
+            <div class="profilefield">
+                <label>Email</label>
+                <span>{{userList[0].email}}</span>
+            </div>
+
+            <div class="profilefield">
+                <label>Phone</label>
+                <span>{{userList[0].phone}}</span>
+            </div>
+
+            <div class="profilefield">
+                <label>Website</label>
+                <span>{{userList[0].website}}</span>
+            </div>
+
+            <div class="profilefield">
+                <label>Street</label>
+                <span>{{userList[0].address.street}}</span>
+            </div>
+
+            <div class="profilefield">
+                <label>Suite</label>
+                <span>{{userList[0].address.suite}}</span>
+            </div>
+
+            <div class="profilefield">
+                <label>City</label>
+                <span>{{userList[0].address.city}}</span>
+            </div>
+
+            <div class="profilefield">
+                <label>Zipcode</label>
+                <span>{{userList[0].address.zipcode}}</span>
+            </div>
+
+            <div class="profilefield">
+                <label>Company Name</label>
+                <span>{{userList[0].company.name}}</span>
+            </div>
+
+        </div>
+    </div>
+
+
+</section>
+
+
+

@@ -1,0 +1,28 @@
+<section class="loginsection">
+
+    <h3 class="opentextapp">Opentext Poster Application</h3>
+
+    <div class="loginformsection">
+
+        <form 
+        [formGroup]="loginForm" 
+        (ngSubmit)="onSubmit()">
+        
+        <input 
+        id="first-name" 
+        type="text" 
+        placeholder="Enter your Email Id"
+        formControlName="email" >
+
+        <div 
+            class="error_text"
+            *ngIf="loginForm.controls['email'].touched && (loginForm.controls['email'].hasError('email')
+                || loginForm.controls['email'].hasError('required'))">
+            Please Enter an Valid Email
+        </div>
+        
+        <button type="submit" [disabled]="!loginForm.valid">Login</button>
+        
+        </form>
+    </div>
+</section>
